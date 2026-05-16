@@ -27,7 +27,15 @@ function Hero() {
                     transition={{
                         duration: 0.8,
                     }}
-                className="space-y-6">
+                    className="
+  space-y-6
+  text-center
+  lg:text-left
+  flex
+  flex-col
+  items-center
+  lg:items-start
+" >
                    
                     <div className="space-y-4">
                         <p
@@ -36,7 +44,7 @@ function Hero() {
                 md:text-base
                 tracking-[0.3em]
                 uppercase
-                text-[#4F8CFF]
+                text-[#8B5CF6]
               "
                         >
                             Full Stack Developer
@@ -58,6 +66,8 @@ function Hero() {
                         <p
                             className="
                 max-w-2xl
+                mx-auto
+                lg:mx-0
                 text-base
                 md:text-lg
                 leading-8
@@ -70,19 +80,26 @@ function Hero() {
                         </p>
                     </div>
 
-                    <div className="flex flex-wrap items-center gap-4">
+                    <div className="flex flex-wrap items-center justify-center lg:justify-start gap-4">
                         <button
                             className="
                 rounded-xl
-                bg-[#4F8CFF]
+                bg-[#8a5cf6e2]
                 px-6
                 py-3
                 text-sm
                 font-medium
                 text-white
                 transition
-                hover:scale-[1.02]
+                hover:scale-[1.03]
+                hover:shadow-[0_0_30px_rgba(139,92,246,0.35)]
+                active:scale-[0.98]
               "
+                            onClick={() => {
+                                document
+                                    .querySelector("#projects")
+                                    ?.scrollIntoView({ behavior: "smooth" })
+                            }}
                         >
                             View Projects
                         </button>
@@ -99,18 +116,56 @@ function Hero() {
                 font-medium
                 text-white
                 transition
-                hover:bg-white/10
+                hover:bg-white/20
+               active:scale-[0.98]
               "
+                            onClick={() => {
+                                document
+                                    .querySelector("#contact")
+                                    ?.scrollIntoView({ behavior: "smooth" })
+                            }}
                         >
                             Contact Me
                         </button>
                     </div>
+                    <div
+                        className="
+    flex
+    flex-wrap
+    items-center
+    justify-center
+    gap-6
+    pt-4
+    text-sm
+    text-[#71717A]
+    lg:justify-start
+  "
+                    >
+                        <div>
+                            <span className="font-semibold text-white">
+                                800+
+                            </span>{" "}
+                            Problems Solved
+                        </div>
+                        <div>
+                            <span className="font-semibold text-white">
+                                Knight
+                            </span>{" "}
+                            (2091 rated) @LeetCode
+                        </div>
+
+
+                        <div>
+                            <span className="font-semibold text-white">
+                                Full Stack
+                            </span>{" "}
+                            Engineering(MERN)
+                        </div>
+                    </div>
                 </motion.div>
 
                
-                <div className="flex justify-center lg:justify-end">
-
-                    <motion.div 
+                <motion.div
                     initial={{
                         opacity: 0,
                         scale: 0.8,
@@ -123,16 +178,20 @@ function Hero() {
                         duration: 0.8,
                         delay: 0.3,
                     }}
+                 className="flex justify-center lg:justify-end">
+
+                    <motion.div 
+                   
                     className="relative">
                         <div
                             className="
-      absolute
-      inset-0
-      rounded-full
-      bg-[#4F8CFF]/20
-      blur-3xl
-    "
-                        />
+                                absolute
+                                -inset-6
+                                rounded-full
+                                bg-[#8B5CF6]/25
+                                blur-3xl
+                            "
+                    />
 
                         <motion.div
                             whileHover={{
@@ -145,8 +204,9 @@ function Hero() {
       relative
       h-65
       w-65
-      md:h-85
-      md:w-85
+      z-10
+      md:h-80
+      md:w-80
       overflow-hidden
       rounded-4xl
       border
@@ -165,11 +225,21 @@ function Hero() {
       object-cover
     "
                             />
+                            <div
+                                className="
+    absolute
+    inset-0
+    bg-linear-to-t
+    from-black/40
+    via-transparent
+    to-transparent
+  "
+                            />
                         </motion.div>
 
                     </motion.div>
                     
-                </div>
+                </motion.div>
             </div>
         </Section>
     )
