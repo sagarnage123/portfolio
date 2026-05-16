@@ -159,7 +159,7 @@ function Hero() {
                             <span className="font-semibold text-white">
                                 Full Stack
                             </span>{" "}
-                            Engineering(MERN)
+                            Engineering(MERN Stack)
                         </div>
                     </div>
                 </motion.div>
