@@ -1,5 +1,5 @@
 import {AnimatePresence, motion } from "framer-motion"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Container from "./Container"
 import { Menu } from "lucide-react"
 
@@ -14,6 +14,31 @@ function Navbar() {
 
     const [activeLink, setActiveLink] = useState("#projects")
     const [isOpen, setIsOpen] = useState(false)
+    useEffect(() => {
+        const handleScroll = () => {
+            const sections = navLinks.map((link) =>
+                document.querySelector(link.href)
+            )
+            
+            const currentSection = sections.find((section) => {
+                if (!section) return false
+
+                const rect = section.getBoundingClientRect()
+
+                return rect.top <= 200 && rect.bottom >= 200
+            })
+
+            if (currentSection?.id) {
+                setActiveLink(`#${currentSection.id}`)
+            }
+        }
+
+        window.addEventListener("scroll", handleScroll)
+
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        }
+    }, [])
 
     return (
         <header className="fixed top-0 left-0 w-full z-50">

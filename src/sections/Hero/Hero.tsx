@@ -14,8 +14,8 @@ function Hero() {
           w-full
         "
             >
-               
-                <motion.div 
+
+                <motion.div
                     initial={{
                         opacity: 0,
                         y: 40,
@@ -36,7 +36,7 @@ function Hero() {
   items-center
   lg:items-start
 " >
-                   
+
                     <div className="space-y-4">
                         <p
                             className="
@@ -84,7 +84,9 @@ function Hero() {
                         <button
                             className="
                 rounded-xl
-                bg-[#8a5cf6e2]
+               bg-linear-to-br
+          from-[#8B5CF6]
+          to-[#3e108d]
                 px-6
                 py-3
                 text-sm
@@ -164,7 +166,7 @@ function Hero() {
                     </div>
                 </motion.div>
 
-               
+
                 <motion.div
                     initial={{
                         opacity: 0,
@@ -178,11 +180,11 @@ function Hero() {
                         duration: 0.8,
                         delay: 0.3,
                     }}
-                 className="flex justify-center lg:justify-end">
+                    className="flex justify-center lg:justify-end">
 
-                    <motion.div 
-                   
-                    className="relative">
+                    <motion.div
+
+                        className="relative">
                         <div
                             className="
                                 absolute
@@ -191,7 +193,7 @@ function Hero() {
                                 bg-[#8B5CF6]/25
                                 blur-3xl
                             "
-                    />
+                        />
 
                         <motion.div
                             whileHover={{
@@ -238,7 +240,7 @@ function Hero() {
                         </motion.div>
 
                     </motion.div>
-                    
+
                 </motion.div>
             </div>
         </Section>

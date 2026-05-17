@@ -1,6 +1,10 @@
 import Navbar from "./components/common/Navbar"
 import Hero from "./sections/Hero/Hero"
 import Projects from "./sections/Projects/Projects"
+import DSA from "./sections/DSA/DSA"
+import Skills from "./sections/Skills/Skills"
+import About from "./sections/About/About"
+import Contact from "./sections/Contact/Contact"
 function App() {
   return (
     <main className="bg-[#0B0B0F] text-[#F5F5F7] min-h-screen">
@@ -42,6 +46,10 @@ function App() {
       <Navbar />
       <Hero />
       <Projects />
+      <DSA />
+      <Skills />
+      <About />
+      <Contact />
     </main>
   )
 }
