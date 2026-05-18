@@ -47,7 +47,7 @@ function Hero() {
                 text-[#8B5CF6]
               "
                         >
-                            Full Stack Developer
+                            Full Stack Developer(MERN)
                         </p>
 
                         <h1
@@ -60,7 +60,7 @@ function Hero() {
                 tracking-tight
               "
                         >
-                            Building scalable products with elegant user experiences.
+                            Focused on solving meaningful problems through scalable software.
                         </h1>
 
                         <p
@@ -75,9 +75,7 @@ function Hero() {
                 text-[#A1A1AA]
               "
                         >
-                            MERN stack developer focused on full stack engineering,
-                            problem solving, performance, and premium digital
-                            experiences.
+                            Full stack developer with a strong foundation in problem solving, focused on building scalable applications with clean engineering and refined user experiences. Interested in backend systems, performance, and creating software that delivers real value to people with great user experiences.
                         </p>
                     </div>
 
@@ -159,9 +157,9 @@ function Hero() {
 
                         <div>
                             <span className="font-semibold text-white">
-                                Full Stack
+                                Full Stack & Software Engineering
                             </span>{" "}
-                            Engineering(MERN Stack)
+                            (MERN Stack)
                         </div>
                     </div>
                 </motion.div>

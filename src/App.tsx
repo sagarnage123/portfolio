@@ -1,11 +1,14 @@
 import Navbar from "./components/common/Navbar"
+import Footer from "./components/common/Footer"
+
+
 import Hero from "./sections/Hero/Hero"
 import Projects from "./sections/Projects/Projects"
 import DSA from "./sections/DSA/DSA"
 import Skills from "./sections/Skills/Skills"
 import About from "./sections/About/About"
 import Contact from "./sections/Contact/Contact"
-import Footer from "./components/common/Footer"
+
 function App() {
   return (
     <main className="bg-[#0B0B0F] text-[#F5F5F7] min-h-screen">
@@ -44,14 +47,18 @@ function App() {
     "
         />
       </div>
+
       <Navbar />
-      <Hero />
-      <Projects />
-      <DSA />
-      <Skills />
-      <About />
-      <Contact />
-      <Footer />
+
+      <div className="pt-10">
+        <Hero />
+        <Projects />
+        <DSA />
+        <Skills />
+        <About />
+        <Contact />
+        <Footer />
+      </div>
     </main>
   )
 }
