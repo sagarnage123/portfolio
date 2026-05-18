@@ -61,7 +61,8 @@ function Navbar() {
   "
                 >
                     <h1 className="text-sm font-semibold tracking-[0.2em] uppercase">
-                        Sagar
+                        <b>Sagar Nage</b>
+                        
                     </h1>
 
                     <nav className="hidden md:flex items-center gap-2">

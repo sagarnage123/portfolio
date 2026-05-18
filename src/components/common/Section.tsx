@@ -16,15 +16,30 @@ function Section({
         <section
             id={id}
             className={`
-        py-20
-        md:py-28
-        lg:py-32
-        ${className}
-      `}
+                relative
+                py-20
+                md:py-28
+                lg:py-32
+                ${className}
+                `}
         >
             <Container>
                 {children}
             </Container>
+            <div
+                className="
+    absolute
+    bottom-0
+    left-1/2
+    h-px
+    w-[85%]
+    -translate-x-1/2
+    bg-linear-to-r
+    from-transparent
+    via-white/10
+    to-transparent
+  "
+            />
         </section>
     )
 }

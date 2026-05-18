@@ -103,6 +103,7 @@ function Skills() {
         duration-300
         hover:-translate-y-1
         hover:border-white/20
+        hover:shadow-[0_0_40px_rgba(139,92,246,0.08)]
       "
                     >
                         <h3

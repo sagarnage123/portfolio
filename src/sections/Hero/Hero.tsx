@@ -70,7 +70,8 @@ function Hero() {
                 lg:mx-0
                 text-base
                 md:text-lg
-                leading-8
+                leading-7
+                md:leading-8
                 text-[#A1A1AA]
               "
                         >
@@ -106,7 +107,10 @@ function Hero() {
                             View Projects
                         </button>
 
-                        <button
+                        <a
+                            href="/resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
                             className="
                 rounded-xl
                 border
@@ -121,14 +125,10 @@ function Hero() {
                 hover:bg-white/20
                active:scale-[0.98]
               "
-                            onClick={() => {
-                                document
-                                    .querySelector("#contact")
-                                    ?.scrollIntoView({ behavior: "smooth" })
-                            }}
+                            
                         >
-                            Contact Me
-                        </button>
+                            Resume
+                        </a>
                     </div>
                     <div
                         className="

@@ -31,7 +31,7 @@ function Contact() {
                 <h2
                     className="
             mt-4
-            text-3xl
+            text-2xl
             md:text-5xl
             font-semibold
             tracking-tight
@@ -63,7 +63,8 @@ function Contact() {
             gap-4
           "
                 >
-                    <button
+                    <a
+                        href="mailto:sagernage1@gmail.com"
                         className="
               rounded-xl
               bg-linear-to-br
@@ -82,9 +83,12 @@ function Contact() {
             "
                     >
                         Email Me
-                    </button>
+                    </a>
 
-                    <button
+                    <a
+                            href="https://www.linkedin.com/in/sagar-nage-6a1a372a4"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         className="
               rounded-xl
               border
@@ -103,9 +107,12 @@ function Contact() {
             "
                     >
                         LinkedIn
-                    </button>
+                    </a>
 
-                    <button
+                    <a
+                            href="https://github.com/sagarnage123"
+                            target="_blank"
+                            rel="noopener noreferrer"
                         className="
               rounded-xl
               border
@@ -124,7 +131,30 @@ function Contact() {
             "
                     >
                         GitHub
-                    </button>
+                    </a>
+                        <a
+                            href="/resume.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="
+    rounded-xl
+    border
+    border-white/10
+    bg-white/5
+    px-6
+    py-3
+    text-sm
+    font-medium
+    text-white
+    transition-all
+    duration-200
+    hover:bg-white/8
+    hover:border-white/20
+    active:scale-[0.98]
+  "
+                        >
+                            Resume
+                        </a>
                 </div>
             </div>
         </FadeIn>

@@ -28,7 +28,9 @@ function Projects() {
     }
     return (
         <Section id="projects">
-            <div className="space-y-4">
+            <div className="space-y-4
+                            text-center
+                            lg:text-left" >
                 <p
                     className="
             text-sm
@@ -96,7 +98,7 @@ function Projects() {
       duration-300
       hover:-translate-y-2
       hover:border-white/20
-      hover:shadow-[0_20px_60px_rgba(0,0,0,0.35)]
+     hover:shadow-[0_0_40px_rgba(139,92,246,0.08)]
     "
                     >
                         <div className="overflow-hidden">
