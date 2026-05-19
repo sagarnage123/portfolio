@@ -1,6 +1,7 @@
 import { motion } from "framer-motion"
 import Section from "../../components/common/Section"
 import { projects } from "../../data/projects"
+
 function Projects() {
     const containerVariants = {
         hidden: {},
@@ -101,18 +102,21 @@ function Projects() {
      hover:shadow-[0_0_40px_rgba(139,92,246,0.08)]
     "
                     >
-                        <div className="overflow-hidden">
-                            <div
+                        <div className="overflow-hidden bg-[#0B0B0F] p-2">
+                            <img
+                                src={project.image}
+                                alt={project.title}
                                 className="
-          h-45
-          md:h-55
-          bg-linear-to-br
-          from-[#1A1A24]
-          to-[#111117]
-          transition-transform
-          duration-500
-          group-hover:scale-105
-        "
+      h-45
+      w-full
+      object-contain
+      
+      transition-transform
+      duration-500
+      group-hover:scale-105
+      md:h-55
+      
+    "
                             />
                         </div>
 
