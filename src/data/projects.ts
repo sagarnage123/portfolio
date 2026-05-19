@@ -3,23 +3,23 @@ export const projects = [
         title: "DevMate",
         type: "Full Stack",
         description:
-            "Full stack productivity platform focused on client management, task workflows, invoices, notes, and elegant user experience.",
-        tech: ["React", "TypeScript", "Node.js", "MongoDB"],
+            "Productivity platform built to simplify client, project, task, and invoice management for freelancers, with focus on scalable architecture, structured workflows, and polished user experience.",
+        tech: ["React","Tailwind","Framer Motion", "TypeScript","express", "Node.js", "MongoDB",],
     },
 
     {
         title: "Portfolio",
         type: "Frontend",
         description:
-            "Premium cinematic developer portfolio focused on smooth animations, responsive design, and polished user experience.",
+            "Personal portfolio focused on responsive design, smooth interactions, reusable UI architecture, and creating a polished experience that reflects strong frontend engineering standards.",
         tech: ["React", "Tailwind", "Framer Motion"],
     },
 
     {
-        title: "Algorithm Tracker",
-        type: "DSA",
+        title: "YourVoice",
+        type: "Full Stack",
         description:
-            "Problem solving dashboard designed to track contest performance, solved problems, ratings, and progress consistency.",
-        tech: ["React", "Charts", "TypeScript"],
+            "Privacy-focused communication platform designed to help students share concerns and feedback anonymously through secure authentication, protected user flows,RBAC, moderation systems, and scalable full stack architecture.",
+        tech: ["React", "Tailwind", "TypeScript", "express", "Node.js", "MongoDB",],
     },
 ]
