@@ -10,6 +10,14 @@ export const projects = [
             "Productivity platform built to simplify client, project, task, and invoice management for freelancers, with focus on scalable architecture, structured workflows, and polished user experience.",
         tech: ["React","Tailwind","Framer Motion", "TypeScript","express", "Node.js", "MongoDB",],
     },
+    {
+        title: "YourVoice",
+        type: "Full Stack",
+        image: yourvoiceImage,
+        description:
+            "Privacy-focused communication platform designed to help students share concerns and feedback anonymously through secure authentication, protected user flows,RBAC, moderation systems, and scalable full stack architecture.",
+        tech: ["React", "Tailwind", "TypeScript", "express", "Node.js", "MongoDB",],
+    },
 
     {
         title: "Portfolio",
@@ -20,12 +28,4 @@ export const projects = [
         tech: ["React", "Tailwind", "Framer Motion"],
     },
 
-    {
-        title: "YourVoice",
-        type: "Full Stack",
-        image: yourvoiceImage,
-        description:
-            "Privacy-focused communication platform designed to help students share concerns and feedback anonymously through secure authentication, protected user flows,RBAC, moderation systems, and scalable full stack architecture.",
-        tech: ["React", "Tailwind", "TypeScript", "express", "Node.js", "MongoDB",],
-    },
 ]
