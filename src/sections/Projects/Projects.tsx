@@ -1,8 +1,11 @@
-import { motion } from "framer-motion"
+import { AnimatePresence,motion } from "framer-motion"
 import Section from "../../components/common/Section"
 import { projects } from "../../data/projects"
+import { useState } from "react"
 
 function Projects() {
+    const [selectedImage, setSelectedImage] =
+        useState<string | null>(null)
     const containerVariants = {
         hidden: {},
 
@@ -103,20 +106,21 @@ function Projects() {
     "
                     >
                         <div className="overflow-hidden bg-[#0B0B0F] p-2">
-                            <img
+                            <motion.img
+                                layoutId={project.image}
                                 src={project.image}
                                 alt={project.title}
                                 className="
-      h-45
-      w-full
-      object-contain
-      
-      transition-transform
-      duration-500
-      group-hover:scale-105
-      md:h-55
-      
-    "
+                                h-45
+                                w-full
+                                object-contain
+                                brightness-90
+                                transition-transform
+                                group-hover:scale-105
+                                md:h-55
+                                cursor-zoom-in
+                                "
+                                onClick={() => setSelectedImage(project.image)}
                             />
                         </div>
 
@@ -212,6 +216,63 @@ function Projects() {
 
                 ))}
             </motion.div>
+                <AnimatePresence>
+                    {selectedImage && (
+                        <motion.div
+                            
+                            initial={{ opacity: 0 }}
+                            animate={{ opacity: 1 }}
+                            exit={{ opacity: 0 }}
+                            onClick={() => setSelectedImage(null)}
+                            className="
+        fixed
+        inset-0
+        z-50
+        flex
+        items-center
+        justify-center
+        p-6
+        bg-black/80
+        backdrop-blur-sm
+      "
+                        >
+                            <motion.img
+                                initial={{
+                                    scale: 0.9,
+                                    opacity: 0,
+                                }}
+                                animate={{
+                                    scale: 1,
+                                    opacity: 1,
+                                }}
+                                exit={{
+                                    scale: 0.9,
+                                    opacity: 0,
+                                }}
+                                transition={{
+                                    duration: 0.25,
+                                }}
+                                src={selectedImage}
+                                alt="Expanded project preview"
+                                onClick={(e) => e.stopPropagation()}
+                            className="
+                            max-h-[85vh]
+                            w-full
+                            max-w-5xl
+                            rounded-xl
+                            border
+                            border-white/10
+                            bg-[#111117]
+                            object-contain
+                            shadow-2xl
+                            sm:rounded-2xl
+                            brightness-90
+                            
+                            "
+                            />
+                        </motion.div>
+                    )}
+                </AnimatePresence>
         </Section>
     )
 }
