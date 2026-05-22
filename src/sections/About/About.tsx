@@ -25,14 +25,14 @@ function About() {
                 <h2
                     className="
             mt-4
-            text-3xl
-            md:text-5xl
+            text-2xl
+            md:text-3xl
+            lg:text-4xl
             font-semibold
             tracking-tight
           "
                 >
-                    Full stack developer focused on building scalable and
-                    polished digital experiences.
+                        Focused on scalable software, problem solving, and thoughtful user experiences.
                 </h2>
 
                 <p
@@ -44,12 +44,7 @@ function About() {
             md:text-lg
           "
                 >
-                    I enjoy building full stack applications that combine
-                    clean engineering, scalable architecture, and refined
-                    user experiences. My interests include backend systems,
-                    problem solving, performance optimization, and creating
-                    products that feel intuitive and polished across every
-                    screen size.
+                        Interested in solving meaningful problems through scalable software, clean engineering, and thoughtful user experiences. Strongly focused on full stack development, backend systems, and strengthening engineering fundamentals through consistent problem solving and competitive programming.
                     <br />
                     <br />
 
