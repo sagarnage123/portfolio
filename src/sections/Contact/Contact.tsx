@@ -32,12 +32,12 @@ function Contact() {
                     className="
             mt-4
             text-2xl
-            md:text-5xl
+            md:text-3xl
             font-semibold
             tracking-tight
           "
                 >
-                    Let’s build something meaningful together.
+                        Interested in meaningful engineering and thoughtful software products.
                 </h2>
 
                 <p
@@ -45,12 +45,11 @@ function Contact() {
             mx-auto
             mt-6
             max-w-2xl
-            leading-8
+            md:leading-8
             text-[#A1A1AA]
           "
                 >
-                    Open to internships, entry-level opportunities,
-                    collaborations, and software engineering roles.
+                        Open to internships, entry-level software engineering opportunities, and collaborations involving full stack development, backend systems, and problem solving.
                 </p>
 
                 <div
