@@ -37,9 +37,7 @@ function DSA() {
             text-[#A1A1AA]
           "
                 >
-                    Strong foundation in algorithms, data structures,
-                    optimization, and competitive programming through
-                    consistent problem solving and contest participation.
+                        Focused on strengthening analytical thinking and engineering fundamentals through consistent problem solving, algorithms, data structures, and competitive programming practice.
                 </p>
             </div>
             <div
@@ -54,14 +52,9 @@ function DSA() {
             >
                 {[
                     {
-                        value: "2091 Rating",
+                        value: "2092 Rating",
                         label: "Knight @ LeetCode",
                         link: "https://leetcode.com/u/sagarnage/",
-                    },
-
-                    {
-                        value: "800+",
-                        label: "Problems Solved",
                     },
 
                     {
@@ -71,8 +64,14 @@ function DSA() {
                     },
 
                     {
+                        value: "800+",
+                        label: "Problems Solved",
+                    },
+
+
+                    {
                         value: "Top 2%",
-                        label: "Global Rank on LeetCode",
+                        label: "Globally on LeetCode",
                     },
                 ].map((item) => (
                     <div

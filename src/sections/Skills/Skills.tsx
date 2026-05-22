@@ -62,7 +62,7 @@ function Skills() {
                     },
 
                     {
-                        title: "Backend Engineering",
+                        title: "Backend & APIs",
                         skills: [
                             "Node.js",
                             "Express.js",
@@ -72,12 +72,13 @@ function Skills() {
                     },
 
                     {
-                        title: "Databases & Tools",
+                        title: "Architecture & Tooling",
                         skills: [
                             "MongoDB",
                             "Mongoose",
                             "Git",
                             "Postman",
+                            "Scalable Code Structure",
                         ],
                     },
 
