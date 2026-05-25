@@ -3,6 +3,8 @@ import Section from "../../components/common/Section"
 import { projects } from "../../data/projects"
 import { useState } from "react"
 
+import toast from "react-hot-toast"
+
 function Projects() {
     const [selectedImage, setSelectedImage] =
         useState<string | null>(null)
@@ -170,6 +172,7 @@ function Projects() {
 
                             <div className="flex items-center gap-3 pt-2">
                                 <button
+                                onClick={() => toast("Live demo not available")}
                                     className="
             rounded-xl
             bg-linear-to-br
@@ -190,7 +193,10 @@ function Projects() {
                                     Live Demo
                                 </button>
 
-                                <button
+                                <a
+                                href={project.github}
+                                target="_blank"
+                                rel="noopener noreferrer"
                                     className="
             rounded-xl
             border
@@ -209,7 +215,7 @@ function Projects() {
           "
                                 >
                                     GitHub
-                                </button>
+                                </a>
                             </div>
                         </div>
                     </motion.div>
