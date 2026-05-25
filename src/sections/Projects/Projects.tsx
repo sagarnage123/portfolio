@@ -2,7 +2,6 @@ import { AnimatePresence,motion } from "framer-motion"
 import Section from "../../components/common/Section"
 import { projects } from "../../data/projects"
 import { useState } from "react"
-
 import toast from "react-hot-toast"
 
 function Projects() {
@@ -172,7 +171,7 @@ function Projects() {
 
                             <div className="flex items-center gap-3 pt-2">
                                 <button
-                                onClick={() => toast("Live demo not available")}
+                                onClick={() => {toast.success("Live demo not available yet!")}}
                                     className="
             rounded-xl
             bg-linear-to-br
