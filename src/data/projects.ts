@@ -4,7 +4,7 @@ import portfolioImage from "../assets/projects/portfolio.png"
 export const projects = [
     {
         title: "DevMate",
-        type: "Full Stack",
+        type: "Full Stack (MERN)",
         image: devmateImage,
         description:
             "Productivity platform built to simplify client, project, task, and invoice management for freelancers, with focus on scalable architecture, structured workflows, and polished user experience.",
@@ -12,7 +12,7 @@ export const projects = [
     },
     {
         title: "YourVoice",
-        type: "Full Stack",
+        type: "Full Stack (MERN)",
         image: yourvoiceImage,
         description:
             "Privacy-focused communication platform designed to help students share concerns and feedback anonymously through secure authentication, protected user flows,RBAC, moderation systems, and scalable full stack architecture.",
