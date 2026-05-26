@@ -171,7 +171,13 @@ function Projects() {
 
                             <div className="flex items-center gap-3 pt-2">
                                 <button
-                                onClick={() => {toast.success("Live demo not available yet!")}}
+                                onClick={() => {
+                                    if(!project.live.trim()) {
+                                    toast.success("Live demo not available yet!")}
+                                    else {
+                                        window.open(project.live, "_blank", "noopener noreferrer")
+                                    }
+                                }}
                                     className="
             rounded-xl
             bg-linear-to-br
