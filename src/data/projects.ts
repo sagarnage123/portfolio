@@ -20,7 +20,7 @@ export const projects = [
             "Productivity platform built to simplify client, project, task, and invoice management for freelancers, with focus on scalable architecture, structured workflows, and polished user experience.",
         tech: ["React","Tailwind","Framer Motion", "TypeScript","express", "Node.js", "MongoDB",],
         github: "https://github.com/sagarnage123/Devmate",
-        live:"",
+        live:"https://devmate-5vow.vercel.app/",
     },
 
     {
