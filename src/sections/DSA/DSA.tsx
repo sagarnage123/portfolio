@@ -64,7 +64,7 @@ function DSA() {
                     },
 
                     {
-                        value: "800+",
+                        value: "1000+",
                         label: "Problems Solved",
                     },
 
