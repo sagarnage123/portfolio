@@ -143,7 +143,7 @@ function Hero() {
                     >
                         <div>
                             <span className="font-semibold text-white">
-                                800+
+                                1000+
                             </span>{" "}
                             Problems Solved
                         </div>
