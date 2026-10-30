@@ -151,7 +151,7 @@ function Hero() {
                             <span className="font-semibold text-white">
                                 Knight
                             </span>{" "}
-                            (2091 rated) @LeetCode
+                            (2092 rated) @LeetCode
                         </div>
 
 
